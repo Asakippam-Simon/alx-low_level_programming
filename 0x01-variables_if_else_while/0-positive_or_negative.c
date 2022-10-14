@@ -2,7 +2,15 @@
 #include <time.h>
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
+/*
+ * main - determine if number is positive or negative
+ *
+ * Description: program will assign a random number to the variable n each time
+ * it is executed.
+ *
+ * Return: Always 0 (Success)
+*/
+
 int main(void)
 {
 	int n;
@@ -10,10 +18,11 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
-		printf("is postive %d\n", n);
+		printf("%d is postive\n", n);
 	if (n == 0)
-		printf("is zero %d\n", n);
+		printf("%d is zero\n", n);
 	if (n < 0)
-		printf("is negative %d\n", n);
+		printf("%d is negative\n", n);
+
 	return (0);
 }
