@@ -4,7 +4,7 @@
  * main - print the letters of the alphabet
  *
  * Description: print the letters of the alphabet except e, q
- * 
+ *
  * Return: Always 0 (Success)
  */
 
@@ -19,7 +19,6 @@ int main(void)
 	else if (i > 41)
 		putchar(i - 10 + 'A');
 		i++;
-		
 	}
 	putchar(10);
 	return (0);
