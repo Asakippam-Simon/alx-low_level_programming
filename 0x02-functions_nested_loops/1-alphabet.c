@@ -1,21 +1,14 @@
 include "main.h"
-/**
- * main - entry point
- * Return: Alway 0
- */
-
-int main(void)
-{
-	LowerCase(97);
-}
 
 /**
  * LowerCase - Prints lowercase alphabet
  *
+ * Description: prints lowercase alphabet
+ *
  * Return: Always 0
  */
 
-void LowerCase(void)
+void print_alphabet(void)
 {
 	int i = 97;
 
