@@ -1,7 +1,7 @@
 include "main.h"
 
 /**
- * LowerCase - Prints lowercase alphabet
+ * print_alphabet - Prints lowercase alphabet
  *
  * Description: prints lowercase alphabet
  *
@@ -10,11 +10,14 @@ include "main.h"
 
 void print_alphabet(void)
 {
-	int i = 97;
+	char ch;
 
-	for (i = 97; i < 123; i++)
+	ch = 'a';
+
+	while (ch <= 'z')
 	{
-		_putchar(i);
+		_putchar(ch);
+		ch++;
 	}
 
 	_putchar('\n');
