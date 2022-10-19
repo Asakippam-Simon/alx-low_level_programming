@@ -10,15 +10,10 @@ include "main.h"
 
 void print_alphabet(void)
 {
-	char ch;
+	char lc;
 
-	ch = 'a';
-
-	while (ch <= 'z')
-	{
-		_putchar(ch);
-		ch++;
-	}
+	for (lc = 'a'; lc <='z'; lc++)
+		_putchar(lc);
 
 	_putchar('\n');
 }
