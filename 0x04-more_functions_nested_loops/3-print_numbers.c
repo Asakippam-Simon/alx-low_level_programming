@@ -1,17 +1,19 @@
 #include "main.h"
 
 /**
- * print_numbers - checks for uppercase letters
+ * print_numbers - prints 0123456789\n
  *
- * Return: 1 if upper, 0 otherwise
+ * Return: void
  */
+
 
 void print_numbers(void)
 {
-	int nums = 0;
+	char c;
 
-	for (nums = 0; nums < 10; nums++)
-		_putchar(nums);
-
+	for (c = '0'; c <= '9'; c++)
+	{
+		_putchar(c);
+	}
 	_putchar('\n');
 }
