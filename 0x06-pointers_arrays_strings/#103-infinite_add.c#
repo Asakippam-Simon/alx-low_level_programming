@@ -1,0 +1,26 @@
+tf("%08x: ", i);
+		for (j = i; j < i + 10; j++)
+		{
+			if (j < size)
+				printf("%02x", (unsigned char)b[j]);
+			else
+				printf("  ");
+			if (j % 2)
+				_putchar(' ');
+		}
+		for (j = i; j < i + 10; j++)
+		{
+			if (j >= size)
+				break;
+
+			if (b[j] >= ' ' && *(b + j) <= '~')
+				_putchar(*(b + j));
+			else
+				_putchar('.');
+		}
+		i += 10;
+		if (i < size)
+			_putchar('\n');
+	}
+	_putchar('\n');
+}

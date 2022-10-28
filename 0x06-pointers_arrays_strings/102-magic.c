@@ -1,10 +1,3 @@
-#include "main.h"
-#include <stdio.h>
-/**
- * main - print a[2] = 98.
- * Return: Always 0.
- */
-
 #include <stdio.h>
 
 int main(void)
