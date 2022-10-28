@@ -28,7 +28,7 @@ void print_buffer(char *b, int size)
 			else
 				printf("  ");
 			if (j % 2)
-				putchar(' ');
+				_putchar(' ');
 		}
 		for (j = i; j < i + 10; j++)
 		{
@@ -36,13 +36,13 @@ void print_buffer(char *b, int size)
 				break;
 
 			if (b[j] >= ' ' && *(b + j) <= '~')
-				putchar(*(b + j));
+				_putchar(*(b + j));
 			else
-				putchar('.');
+				_putchar('.');
 		}
 		i += 10;
 		if (i < size)
-			putchar('\n');
+			_putchar('\n');
 	}
-	putchar('\n');
+	_putchar('\n');
 }
