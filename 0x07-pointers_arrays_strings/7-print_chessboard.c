@@ -6,7 +6,7 @@
  * Return: void
  */
 
-void print_chessboard(char (*a)[2])
+void print_chessboard(char (*a)[8])
 {
 	int n, j;
 
