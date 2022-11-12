@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdlib.h>
 
 /**
@@ -7,12 +6,13 @@
  *
  * Return: A pointer to the allocated memory.
  */
-void *malloc_checked(unsigned int *b);
 
-	void *mem = malloc(b);
+void *malloc_checked(unsigned int b)
+{
+	void *new_mem;
 
-	if (mem == NULL)
+	new_mem = malloc(b);
+	if (new_mem == NULL)
 		exit(98);
-	else
-		return (mem);
+	return (new_mem);
 }
