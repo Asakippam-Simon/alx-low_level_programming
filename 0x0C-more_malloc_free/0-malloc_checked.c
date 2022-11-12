@@ -7,11 +7,9 @@
  *
  * Return: A pointer to the allocated memory.
  */
-void *malloc_checked(unsigned int b)
-{
-	unsigned int *mem;
+void *malloc_checked(unsigned int *b);
 
-	mem = (unsigned int*)malloc(b * sizeof(int));
+	void *mem = malloc(b);
 
 	if (mem == NULL)
 		exit(98);
