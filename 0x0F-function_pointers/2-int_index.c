@@ -1,5 +1,6 @@
+#include <stdbool.h>
 #include <stddef.h>
-/*#include "function_pointers.h"*/
+#include "function_pointers.h"
 
 /**
  * int_index - search for integer
@@ -23,7 +24,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 		for (i = 0; i < size; i++)
 		{
 			y = cmp(array[i]);
-			if (y == TRUE)
+			if (y == 1)
 			{
 				return (i);
 			}
